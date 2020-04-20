@@ -1,1 +1,0 @@
-# rookie-training-sample-actions
