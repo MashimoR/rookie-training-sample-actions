@@ -23,4 +23,4 @@ jobs:
           deploy_key: ${{ secrets.GITHUB_TOKEN }}
 
           # 公開するディレクトリ
-          publish_dir: ./html
+          publish_dir: ./public
