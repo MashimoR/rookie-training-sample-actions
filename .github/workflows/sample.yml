@@ -12,7 +12,15 @@ jobs:
 
     # 実行する環境 ( Docker Hub の CentOS8 を利用 )
     container:
-      image: centos:8
+      image: node:10.16-jessie
+      env:
+        NODE_ENV: development
+      ports:
+        - 80
+      volumes:
+        - my_docker_volume:/volume_mount
+      options: --cpus 1
+
 
     # 実行する処理やコマンドの指定
     steps:
