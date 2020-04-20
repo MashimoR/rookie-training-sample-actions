@@ -11,7 +11,8 @@ jobs:
   sample:
 
     # 実行する環境 ( Docker Hub の CentOS8 を利用 )
-    container: centos:8
+    container:
+      image: centos:8
 
     # 実行する処理やコマンドの指定
     steps:
