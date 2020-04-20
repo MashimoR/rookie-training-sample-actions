@@ -1,4 +1,4 @@
-name: Sample
+name: Container
 on: push
 
 jobs:
