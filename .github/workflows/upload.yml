@@ -11,18 +11,18 @@ jobs:
 
         # パイプ`|`を利用することで複数行に渡って書くことができる
         run: |
-          touch sample.txt
-          echo "Sample" >> sample.txt
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+          brew install imagemagick
 
-      # 成果物をGitHub上にアップロードするアクションを利用
-      - name: Upload TXT
-        uses: actions/upload-artifact@v1
+      # # 成果物をGitHub上にアップロードするアクションを利用
+      # - name: Upload TXT
+      #   uses: actions/upload-artifact@v1
 
-        # 成果物の設定
-        with:
+      #   # 成果物の設定
+      #   with:
 
-          # アップロード後の名称（ {{名称}}.zip でアップロードされる ）
-          name: sample
+      #     # アップロード後の名称（ {{名称}}.zip でアップロードされる ）
+      #     name: sample
 
-          # アップロードするファイル or ディレクトリ名
-          path: ./sample.txt
+      #     # アップロードするファイル or ディレクトリ名
+      #     path: ./sample.txt
