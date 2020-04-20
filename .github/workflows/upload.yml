@@ -1,4 +1,4 @@
-name: Sample
+name: Deliverable
 on: push
 
 jobs:
