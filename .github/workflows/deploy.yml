@@ -20,7 +20,7 @@ jobs:
         with:
 
           # デプロイに利用するキー
-          deploy_key: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
           # 公開するディレクトリ
-          publish_dir: ./public
+          publish_dir: ./html
